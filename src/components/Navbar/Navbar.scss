@@ -1,0 +1,29 @@
+.nav {
+    padding: 65px 0 15px;
+
+    & .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #D8D8D8;
+        ;
+        padding-bottom: 15px;
+    }
+
+    &_list {
+        display: flex;
+        gap: 65px;
+        transition: 0.4s;
+    }
+
+    &_link {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 168.75%;
+    }
+
+}
+
+.active {
+    right: 0;
+}

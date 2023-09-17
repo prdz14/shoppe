@@ -1,0 +1,39 @@
+.shop {
+    padding: 85px 0;
+
+    &_title {
+        color: #000;
+        font-size: 33px;
+        font-weight: 500;
+        line-height: 43px;
+        margin-bottom: 40px;
+    }
+
+    &_filters {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        margin-bottom: 20px;
+
+        &-btn {
+            color: #A18A68;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+
+    &_grid {
+        justify-content: center;
+    }
+
+    &_item {
+        width: 290px;
+
+        &-img {
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+}

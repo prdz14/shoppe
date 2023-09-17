@@ -1,0 +1,102 @@
+.shop {
+    margin-bottom: 100px;
+
+    &_upper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    &_title {
+        color: black;
+        font-family: 'Montserrat';
+        font-size: 33px;
+        font-weight: 500;
+        line-height: 130.303%;
+    }
+
+    &_btn {
+        color: #A18A68;
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 130%;
+        text-transform: capitalize;
+    }
+
+    &_grid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &_item {
+        width: 380px;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+            .shop_item-btn {
+                top: 0;
+                transition: 0.4s;
+            }
+        }
+
+        &-btn {
+            transition: 0.4s;
+            position: absolute;
+            top: -20%;
+            left: 0;
+            height: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px 15px 0 0;
+            background: rgba(0, 0, 0, 0.515);
+            backdrop-filter: blur(20px);
+            width: 100%;
+            color: white;
+            font-size: 20px;
+
+
+        }
+
+        &-title {
+            color: black;
+            font-family: 'Montserrat';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            margin: 25px 0 15px;
+            padding-left: 15px;
+        }
+
+        &-price {
+            color: #A18A68;
+            font-family: 'Montserrat';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;
+            text-transform: capitalize;
+            padding-left: 15px;
+            padding-bottom: 15px;
+            display: inline-block;
+        }
+
+        &-img {
+            width: 380px;
+            height: 380px;
+            object-fit: cover;
+            overflow: hidden;
+            border-radius: 15px 15px 0 0;
+            // position: relative;
+        }
+    }
+}
